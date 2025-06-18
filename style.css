@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --a: 0
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.search {
+    width: 380px;
+    height: 40px;
+    display: flex;
+    position: relative;
+}
+
+.mobile_only {
+    display: none;
+}
+
+.search input {
+    margin-left: 15px;
+    border: 1px solid #ccc;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-image: url(images/search.svg), url(images/search_next.svg);
+    background-repeat: no-repeat;
+    background-position: left 10px center, right 10px center;
+    background-size: 20px;
+    filter: none;
+}
+
+.button button {
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button button:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    height: 100%;
+    width: 25%;
+    margin: 10px;
+    position: relative;
+}
+
+.close {
+    display: none;
+}
+
+.library {
+    max-height: 100%;
+    margin: 10px;
+    position: relative;
+    background-color: #2e2828;
+}
+
+.music {
+    max-height: 57vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    overflow-y: scroll;
+}
+
+.music ul li {
+    border: 2px solid white;
+    list-style-type: decimal;
+    display: flex;
+    margin-top: 5px;
+    cursor: pointer;
+    padding: 0 8px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 21px;
+}
+
+.imagee {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid;
+}
+
+.imagee img {
+    width: 27px;
+    margin-right: 240px;
+}
+
+.imagee h3 {
+    position: absolute;
+    left: 40px;
+}
+
+.others {
+    position: relative;
+    min-height: 13vh;
+    margin: 10px;
+    background-color: #2d2c2c;
+}
+
+.last {
+    display: flex;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    gap: 17px;
+    flex-wrap: wrap;
+}
+
+.last a {
+    color: white;
+}
+
+.right {
+    width: 75%;
+    height: 100%;
+    margin: 10px;
+    position: relative;
+}
+
+.store {
+    margin-top: 12px;
+    overflow-y: scroll;
+    position: relative;
+    max-height: 76vh;
+}
+
+.container1 {
+    margin: 20px;
+    display: flex;
+
+    position: relative;
+}
+
+.container1 h2 {
+    position: absolute;
+    margin-top: -10px;
+}
+
+.album {
+    position: relative;
+    height: 240px;
+    width: 200px;
+    margin: 20px;
+    object-fit: cover;
+    transition: all 0.9s;
+}
+
+.album:hover {
+    background-color: #313030;
+    opacity: .8;
+    --a: 1;
+}
+
+.music ul li:hover {
+    border: 4px solid white;
+    transform: scale(.9);
+    background-color: rgb(70, 83, 96)
+}
+
+.splay {
+    position: absolute;
+
+    right: 30px;
+    bottom: 100px;
+    transition: all 0.1s ease-in;
+    opacity: var(--a);
+}
+
+.img {
+    margin: 15px;
+    position: relative;
+}
+
+
+.img img {
+    height: 20vh;
+    border-radius: 1000px;
+    border: 2px solid rgb(107, 93, 93);
+}
+
+
+.imgg {
+    margin: 15px;
+    position: relative;
+}
+
+
+.imgg img {
+    height: 20vh;
+    border-radius: 20px;
+    border: 2px solid;
+}
+
+
+.line {
+    border: 10px solid;
+}
+
+.playbar {
+    position: relative;
+    height: 55px;
+    border-radius: 30px;
+    border: 2px solid purple;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.songinfo {
+    width: 250px;
+}
+
+.songbuttons {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.songbuttons img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.volume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.volume input,
+img {
+    cursor: pointer;
+}
+
+.seekbar {
+    cursor: pointer;
+    height: 5px;
+    width: 95%;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+    bottom: 5px;
+    left: 0%;
+    transition: left 0.5s;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1250px) {
+
+    .logo img {
+        margin-top: 3px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .left {
+        position: absolute;
+        left: -130%;
+        transition: all .3s;
+        z-index: 1;
+        width: 373px;
+        background-color: burlywood;
+        padding: 0;
+        height: 100vh;
+        position: fixed;
+
+    }
+
+    .close {
+        display: block;
+        position: relative;
+        left: 330px;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .container1 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .container1 h2 {
+        margin-top: 0;
+    }
+
+    .album {
+        margin: 5px;
+        margin-top: 25px;
+
+    }
+
+}
+
+@media screen and (max-width:670px) {
+
+    .search {
+        background-image: url(images/search.svg);
+        background-repeat: no-repeat;
+        width: 1px;
+    }
+
+    .mobile_only {
+        display: block;
+    }
+
+    .home {
+        display: none;
+    }
+
+    .search input {
+        display: none;
+    }
+
+    .line {
+        border: 4px solid;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .range input[type="range"] {
+        width: 90px;
+        /* reduce width */
+
+    }
+
+    .songinfo {
+        width: 100px;
+        height: 40px;
+        overflow: hidden;
+        /* white-space: nowrap;   */
+        text-overflow: ellipsis;
+    }
+
+    .songbuttons {
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .album {
+        width: 100%;
+
+        height: auto;
+
+
+        object-fit: cover;
+
+    }
+
+    .img img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+        border-radius: 20%;
+    }
+
+    .imgg img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+        border-radius: 10%;
+    }
+}

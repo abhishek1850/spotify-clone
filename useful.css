@@ -1,0 +1,40 @@
+.b {
+  border: 2px solid red;
+}
+
+.filter {
+  filter: invert(1);
+}
+
+.back {
+  background-color: #212121;
+}
+
+/* Custom Scrollbar Styling for Brave */
+::-webkit-scrollbar {
+  width: 12px;
+  /* Width of the scrollbar */
+  height: 12px;
+  /* Height of the scrollbar for horizontal scrolling */
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  /* Dark background for the track */
+  border-radius: 10px;
+  /* Optional: round the edges */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  /* Dark gray thumb */
+  border-radius: 10px;
+  /* Rounded corners for a sleek look */
+  border: 2px solid #1a1a1a;
+  /* Creates a gap effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+  /* Slightly lighter gray on hover */
+}
