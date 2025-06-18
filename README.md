@@ -1,3 +1,6 @@
+⚠️ This is a personal project for learning purposes. It is not affiliated with or endorsed by Spotify.
+
+
 # 📻 Spotify Clone 🎧
 
 A fully responsive **Spotify UI clone** built using **HTML, CSS, and JavaScript**, mimicking the look and feel of the real Spotify web player.
